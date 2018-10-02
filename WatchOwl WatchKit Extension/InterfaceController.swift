@@ -13,10 +13,12 @@ import WatchConnectivity
 class InterfaceController: WKInterfaceController, WCSessionDelegate {
 
     @IBOutlet weak var refreshButton: WKInterfaceButton!
+    
+    @IBOutlet weak var usingText: WKInterfaceLabel!
     @IBOutlet weak var solarText: WKInterfaceLabel!
+    @IBOutlet weak var exportingText: WKInterfaceLabel!
     
     @IBAction func refreshTapped() {
-        //        welcomeText.setHidden(true)
         solarText.setText(String(CFAbsoluteTimeGetCurrent()))
     }
     
@@ -44,6 +46,15 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     }
 
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        let using = message["using"] as? String
+        usingText.setText(using)
+
+        let solar = message["solar"] as? String
+        solarText.setText(solar)
+
+        let exporting = message["exporting"] as? String
+        exportingText.setText(exporting)
+
         WKInterfaceDevice().play(.success)
     }
     

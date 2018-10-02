@@ -13,8 +13,14 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchOwl_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="136" height="111" alignment="left" text="SOLAR" textAlignment="center" id="M0o-gj-iIM" userLabel="solarText">
+                        <label width="136" height="31" alignment="left" text="USING" textAlignment="center" id="M0o-gj-iIM" userLabel="usingText">
+                            <color key="textColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label width="136" height="31" alignment="left" text="SOLAR" textAlignment="center" id="bXH-eO-4OY" userLabel="solarText">
                             <color key="textColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label width="136" height="31" alignment="left" text="EXPORTING" textAlignment="center" id="YOG-wu-bGY" userLabel="exportingText">
+                            <color key="textColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </label>
                         <button width="1" alignment="left" title="TIME" id="ptw-ne-cLm" userLabel="refreshButton">
                             <connections>
@@ -23,12 +29,14 @@
                         </button>
                     </items>
                     <connections>
+                        <outlet property="exportingText" destination="YOG-wu-bGY" id="PzO-m8-FW3"/>
                         <outlet property="refreshButton" destination="ptw-ne-cLm" id="IMH-0N-uRD"/>
-                        <outlet property="solarText" destination="M0o-gj-iIM" id="jAd-FK-ZrJ"/>
+                        <outlet property="solarText" destination="bXH-eO-4OY" id="k7x-ht-FJe"/>
+                        <outlet property="usingText" destination="M0o-gj-iIM" id="GVX-Q3-B2i"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="344"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

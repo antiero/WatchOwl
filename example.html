@@ -1,0 +1,795 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	            <title> OWL Intuition - Home Dashboard </title>
+                <meta name="keywords" content="">
+                <meta name="description" content="">
+
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                <meta http-equiv="cache-control" content="max-age=0">
+                <meta http-equiv="cache-control" content="no-cache">
+                <meta http-equiv="expires" content="0">
+                <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+                <meta http-equiv="pragma" content="no-cache">
+
+					<style type="text/css" media="all">
+						@import "Styles/main.css";
+					</style>
+					<style type="text/css" media="all">
+						@import "Styles/login.css";
+					</style>
+                <script type="text/javascript" src="Javascript/jquery-1.7.1.min.js"></script>
+
+	            <link rel="stylesheet" href="Styles/jquery.ui.all.css">
+	            <link rel="stylesheet" href="Styles/jquery.alerts.css">
+                <link rel="shortcut icon" href="favicon.ico">
+				<script type="text/javascript" src="Javascript/jquery.jconfirm-1.0.min.js"></script>
+				<link rel="stylesheet" href="Styles/jquery.confirm.css">
+				<link href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+                <script type="text/javascript">
+                    $(window).load(function() {
+                        language_loadSupported();
+                    });
+                </script>
+	            </head>
+	            <body>
+	            	<div id="main-container">
+	                	<div id="header-outer">
+	                    	<div id="header-center">
+	                        	<div id="header-logo">
+	                            	<img src="Images/Owl-Intuition.png" alt="Logo">
+    	                        </div>
+	                        	<div id="header-menu">
+	                            <ul><li><a id="mnu_devices" style="display: block;"><i class="fa fa-sitemap fa-lg"></i> &nbsp;Devices</a></li><li><a id="mnu_system_settings" style="display: block;"><i class="fa fa-cogs fa-lg"></i> &nbsp;System</a></li><li><a id="mnu_wizard"><i class="fa fa-magic fa-lg"></i> &nbsp;Wizard</a></li><li><a id="mnu_messages"><i class="fa fa-envelope fa-lg"></i> &nbsp;Messages</a></li><li><a id="mnu_store"><i class="fa fa-life-saver fa-lg"></i> &nbsp;Support</a></li><li><a id="mnu_logout"><i class="fa fa-sign-out fa-lg"></i> &nbsp;Logout</a></li></ul></div>
+	                        </div>
+	                        <div class="clear"></div>
+	                    </div>
+	                	<div id="main-outer">
+							<div id="login_username">Logged in as: nasce</div>
+                            <noscript>
+                                &lt;div id="warning-notification" style="width: 900px; text-align: center; padding: 10px; border: 1px dashed red; margin-left: auto; margin-right: auto;"&gt;
+                                    &lt;b&gt;This Dashboard Requires Javascript to be enabled.&lt;/b&gt;&lt;br/&gt;
+                                &lt;/div&gt;
+                                &lt;div class="clear"&gt;&lt;/div&gt;
+                            </noscript>
+                
+	                    	<div id="main-center"><div id="banner-main">    <div id="banner-weather">        <div id="banner-weather-image">        </div>        <div id="banner-weather-text">            <span id="local-weather-temperature">--</span><span id="weather-temperature-units">°C</span> <span id="local-weather-text"></span>            <p class="weather-info-bar">Humidity: <span id="weather-humidity-text">--%</span> &nbsp;Wind: <span id="weather-windspeed-text">-- mph</span> &nbsp;Cloud Cover: <span id="weather-cloud-text">--%</span></p>        </div>    </div>    <div id="banner-property-status">	    <div id="banner-property-status-image">            <img id="property-image" src="Images/House-90.png" alt="Property Occupied">        </div>        <div id="banner-property-status-text">            <span id="property-name">Network OWL 14bf5f</span> <span id="property-occupied-text"> </span> &nbsp; <span id="nowl_change" class="selectable-image fa fa-caret-down fa-lg" style="display: none;"></span><br>            <p><span id="system-status-description">System Online</span></p>        </div>    </div>	<div class="clear"></div></div><div id="scroller-outer">    <div class="caroufredsel_wrapper" style="text-align: start; float: none; position: relative; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 1040px; height: 460px; margin: 0px 0px 8px; overflow: hidden;"><div id="scroller-main" style="text-align: left; float: none; position: absolute; top: 0px; left: 6px; margin: 0px; width: 3784px; height: 460px;">    <div class="scroller-section">	<div class="scroller-section-main" id="widget-electricity-main"><div class="standard-section-top" id="widget-electricity">  <div class="standard-section-logo">      <img src="Images/Light-Bulb.png" id="widget-electricity-logo">  </div>  <div class="standard-section-data" id="widget-electricity-data">   <div id="electricity-current-watts" class="standard-section-data-label">417 Watts</div>      <div id="electricity-current-cost" class="standard-section-data-label-medium">5.0p /hr</div>      <div id="electricity-current-price" class="standard-section-data-label-medium" style="display: none;">£0.1191</div></div>  </div>  <div class="standard-section-info" id="widget-electricity-info">      <table id="electricity-data-table" class="standard-section-table">          <tbody>              <tr><th></th><th>Total Energy Used</th><th>Net Cost</th><th></th></tr>              <tr><td id="">Today</td><td id="electricity-data-today" class="data">10.3 kWh</td><td id="electricity-cost-today" class="data">£1.08</td><td class'trend'="" id="electricity-trend-today"></td></tr>              <tr><td id="">Yesterday</td><td id="electricity-data-day" class="data">15.3 kWh</td><td id="electricity-cost-day" class="data">£1.70</td><td class'trend'="" id="electricity-trend-day"><img class="selectable-image" src="Images/small-red-arrow-up.jpg" title="Yesterday you used 7.5kWh more electricity than the day before. You spent an extra 81.0p"></td></tr>              <tr><td id="">Last 7 Days</td><td id="electricity-data-week" class="data">65.0 kWh</td><td id="electricity-cost-week" class="data">£7.04</td><td class'trend'="" id="electricity-trend-week"><img class="selectable-image" src="Images/small-red-arrow-up.jpg" title="Over the last 7 days you used 42.9kWh more electricity than the previous 7 days. You spent an extra £4.47"></td></tr>              <tr><td id="">Last 30 Days</td><td id="electricity-data-month" class="data">87.2 kWh</td><td id="electricity-cost-month" class="data">£9.61</td><td class'trend'="" id="electricity-trend-month"><img class="selectable-image" src="Images/small-red-arrow-up.jpg" title="Over the last 30 days you used 87.2kWh more electricity than the previous 30 days. You spent an extra £9.61"></td></tr>          </tbody>      </table></div>  <div class="standard-section-options" id="widget-electricity-options">    <div class="standard-section-options-item">          <button class="img-button" onclick="cb_electricity_graphs_click();"><img style="width: 50px; height: 50px;" src="Images/Graph.png"></button>      </div>  <div class="standard-section-options-item">          <button class="img-button" onclick="widget_electricity_show_csv_export();"><img style="width: 50px; height: 50px;" src="Images/CSV-Download.png"></button>      </div></div></div>    <div class="scroller-section-title" id="widget-electricity-title-main" style="border-top-color: rgb(200, 181, 6);">    	<div class="scroller-section-title-text" id="widget-electricity-title">Electricity</div>    	<div class="scroller-section-title-action" id="widget-electricity-title-action">             <div class="widget-title-action-item">                 <button class="img-button" onclick="system_handle_plugin_settings_click(&quot;electricity&quot;)"><i class="selectable-image fa fa-cogs fa-2x"></i></button>             </div>    	<div class="widget-title-action-item"><img id="electricity-signal-strength" src="Images/Signal/Signal-Strength-W0.png" style="display: none;"></div><div class="widget-title-action-item"><img id="electricity-battery-level" src="Images/Battery/Battery-Level-20.png" style="display: none;"></div></div>    </div>    <div class="clear"></div></div><div class="scroller-section">	<div class="scroller-section-main" id="widget-solar-main"><div class="standard-section-top" id="widget-solar">  <div class="standard-section-logo">      <img src="Images/Solar-PV.png" id="widget-solar-logo">  </div>  <div class="standard-section-data" id="widget-solar-data"><div id="solar-current-watts" class="standard-section-data-label">0 Watts</div><div id="solar-exported-watts" class="standard-section-data-label-small">Exporting 0W</div><br><div id="opt-solar-overview-switch" class="selectable" onclick="solar_change_to_channels();" style="display: none;">[View Channels]</div></div>  </div>  <div class="standard-section-info" id="widget-solar-info">      <table id="solar-data-table" class="standard-section-table">          <tbody>              <tr><th></th><th>Generated</th><th>Exported</th><th></th></tr>              <tr><td id="">Today</td><td id="solar-data-today" class="data">3.8 kWh</td><td id="solar-exported-today" class="data">0.8 kWh</td><td class'trend'="" id="solar-trend-today"></td></tr>              <tr><td id="">Yesterday</td><td id="solar-data-day" class="data">3.5 kWh</td><td id="solar-exported-day" class="data">0.6 kWh</td><td class'trend'="" id="solar-trend-day"><img class="selectable-image" src="Images/small-green-arrow-up.jpg" title="Yesterday you generated 0.3kWh more electricity than the day before."></td></tr>              <tr><td id="">Last Week</td><td id="solar-data-week" class="data">29.7 kWh</td><td id="solar-exported-week" class="data">12.1 kWh</td><td class'trend'="" id="solar-trend-week"><img class="selectable-image" src="Images/small-green-arrow-up.jpg" title="Over the last 7 days you generated 21.9kWh more electricity than the previous 7 days."></td></tr>              <tr><td id="">Last 30 Days</td><td id="solar-data-month" class="data">37.5 kWh</td><td id="solar-exported-month" class="data">14.5 kWh</td><td class'trend'="" id="solar-trend-month"><img class="selectable-image" src="Images/small-green-arrow-up.jpg" title="Over the last 30 days you generated 37.5kWh more electricity than the previous 30 days."></td></tr>              <tr><td id="">Since Install</td><td id="solar-data-all" class="data">37.5 kWh</td><td id="solar-exported-all" class="data">14.5 kWh</td><td class'trend'=""><img class="selectable-image" src="Images/Information-1.png" title="Approximate values. Please check meter before using values for FITs claims"></td></tr>          </tbody>      </table></div>  <div class="standard-section-options" id="widget-solar-options">    <div class="standard-section-options-item">          <button class="img-button" onclick="cb_solar_graphs_clicked();"><img style="width: 50px; height: 50px;" src="Images/Graph.png"></button>      </div></div></div>    <div class="scroller-section-title" id="widget-solar-title-main" style="border-top-color: rgb(0, 70, 160);">    	<div class="scroller-section-title-text" id="widget-solar-title" style="width: 255px;">Solar</div>    	<div class="scroller-section-title-action" id="widget-solar-title-action">             <div class="widget-title-action-item">                 <button class="img-button" onclick="system_handle_plugin_settings_click(&quot;solar&quot;)"><i class="selectable-image fa fa-cogs fa-2x"></i></button>             </div>    	</div>    </div>    <div class="clear"></div></div><div class="scroller-section" style="margin-right: 11px;">	<div class="scroller-section-main" id="widget-today-main"><div class="standard-section"><div class="mini-sections-scroll-top" id="widget-today-list-scroll-top" onclick="widget_today_list_section_scroll(1)"></div><div class="scrolling-list-section" id="widget-today-list"><div class="list-section-item" id="today-item-elec" onclick="cb_today_item_clicked(&quot;today-item-elec&quot;);">    <div class="list-section-item-image"><button class="img-button" onclick="cb_today_item_clicked(&quot;today-item-elec&quot;);"><img id="today-item-elec-image" src="Images/Temp-Light-Bulb-Small.png"></button></div>    <div class="list-section-item-text" id="today-item-elec-data"><div class="list-item-title">Electricity Yesterday</div><table class="list-section-table">  <tbody><tr><td class="label">Max:</td><td id="electricity-use-max" class="data">4.86kW</td></tr>  <tr><td class="label">Min:</td><td id="electricity-use-min" class="data">0.20kW</td></tr>  <tr><td class="label">Ave:</td><td id="electricity-use-ave" class="data">0.64kW</td></tr></tbody></table></div></div><div class="list-section-item" id="today-item-solar" onclick="cb_today_item_clicked(&quot;today-item-solar&quot;);">    <div class="list-section-item-image"><button class="img-button" onclick="cb_today_item_clicked(&quot;today-item-solar&quot;);"><img id="today-item-solar-image" src="Images/Temp-Solar-PV-Small.png"></button></div>    <div class="list-section-item-text" id="today-item-solar-data"><div class="list-item-title">Solar Yesterday</div><table class="list-section-table">  <tbody><tr><td class="label">Generated Max:</td><td id="solar-use-max" class="data">0.77kW</td></tr>  <tr><td class="label">Generated Ave:</td><td id="solar-use-ave" class="data">0.15kW</td></tr>  <tr><td class="label">Imported Total:</td><td id="solar-use-import" class="data">12.36kWh</td></tr>  <tr><td class="label">PV Used:</td><td id="solar-used" class="data">2.95kWh</td></tr></tbody></table></div></div><div class="list-section-item" id="today-item-solar-financial" onclick="cb_today_item_clicked(&quot;today-item-solar-financial&quot;);">    <div class="list-section-item-image"><button class="img-button" onclick="cb_today_item_clicked(&quot;today-item-solar-financial&quot;);"><img id="today-item-solar-financial-image" src="Images/Cash-Pile.png"></button></div>    <div class="list-section-item-text" id="today-item-solar-financial-data"><div class="list-item-title">Solar Financials <img id="today-solar-financials-info" class="selectable-image" style="padding-left: 15px;" src="Images/Information-1.png" title="These figures are calculated using the Assumed Export percentage of 50% - you can alter this in Solar settings" alt="These figures are calculated using the Assumed Export percentage of 50% - you can alter this in Solar settings"></div><table class="list-section-table">   <tbody><tr><th class="label"></th><th class="info-item" title="&quot;Net Value&quot; is generated + exported">Net</th><th class="info-item" title="&quot;Total Value&quot; is &quot;Net Value&quot; + value of the PV generated energy you have consumed within your home">Total</th></tr>   <tr><td class="label">Yesterday:</td><td id="solar-financial-yesterday" class="data">48.8p</td><td id="solar-financial-yesterday-total" class="data">82.8p</td></tr>   <tr><td class="label">Last Week:</td><td id="solar-financial-last-week" class="data">£4.42</td><td id="solar-financial-last-week-total" class="data">£6.46</td></tr>   <tr><td class="label">Last 30 Days:</td><td id="solar-financial-last-month" class="data">£5.55</td><td id="solar-financial-last-month-total" class="data">£8.22</td></tr>   <tr><td class="label">Since Install:</td><td id="solar-financial-since-install" class="data">£5.55</td><td id="solar-financial-since-install-total" class="data">£8.22</td></tr></tbody></table></div></div><div class="list-section-item" id="today-item-co2" onclick="cb_today_item_clicked(&quot;today-item-co2&quot;);">    <div class="list-section-item-image"><button class="img-button" onclick="cb_today_item_clicked(&quot;today-item-co2&quot;);"><img id="today-item-co2-image" src="Images/Power-Station-CO2.png"></button></div>    <div class="list-section-item-text" id="today-item-co2-data"><div class="list-item-title">CO2e</div><table class="list-section-table">  <tbody><tr><td class="label">Yesterday:</td><td id="co2-yesterday" class="data">6.48kg</td></tr>  <tr><td class="label">Last Week:</td><td id="co2-last-week" class="data">24.87kg</td></tr>  <tr><td class="label">Last 30 Days:</td><td id="co2-last-month" class="data">33.63kg</td></tr></tbody></table></div></div></div><div class="clear"></div>  <div class="mini-sections-scroll-bottom" id="widget-today-list-scroll-bottom" onclick="widget_today_list_section_scroll(0)"></div></div></div>    <div class="scroller-section-title" id="widget-today-title-main" style="border-top-color: rgb(160, 160, 96);">    	<div class="scroller-section-title-text" id="widget-today-title">Overview</div>    	<div class="scroller-section-title-action" id="widget-today-title-action">    	</div>    </div>    <div class="clear"></div></div><div class="scroller-section">	<div class="scroller-section-main" id="widget-news-main"><div class="list-section" id="widget-news-list"><div class="list-section-item" id="news-item-0" onclick="cb_news_item_clicked(&quot;news-item-0&quot;);">    <div class="list-section-item-image"><button class="img-button" onclick="cb_news_item_clicked(&quot;news-item-0&quot;);"><img id="news-item-0-image" src="Images/News/Heating-Running-70.png"></button></div>    <div class="list-section-item-text" id="news-item-0-data"><div class="news-item-title">Multizone Heating</div><div class="timestamp">14:00, 28/7/2015</div><div class="news-item-text">OWL Intuition now supports up to 10 heating zones. Learn More.</div><div class="clear"></div></div></div><div class="list-section-item" id="news-item-1" onclick="cb_news_item_clicked(&quot;news-item-1&quot;);">    <div class="list-section-item-image"><button class="img-button" onclick="cb_news_item_clicked(&quot;news-item-1&quot;);"><img id="news-item-1-image" src="Images/News/Summer-Mode.png"></button></div>    <div class="list-section-item-text" id="news-item-1-data"><div class="news-item-title">Summer Mode - Heating Controls</div><div class="timestamp">16:00, 20/5/2013</div><div class="news-item-text">Summer Mode - an important update on your system operation.</div><div class="clear"></div></div></div><div class="list-section-item" id="news-item-2" onclick="cb_news_item_clicked(&quot;news-item-2&quot;);">    <div class="list-section-item-image"><button class="img-button" onclick="cb_news_item_clicked(&quot;news-item-2&quot;);"><img id="news-item-2-image" src="Images/News/Eic-Logo.png"></button></div>    <div class="list-section-item-text" id="news-item-2-data"><div class="news-item-title">Finalists in UK Energy Innovation Awards 2013</div><div class="timestamp">11:40, 18/3/2013</div><div class="news-item-text">2 Save Energy are finalists in the UK Energy Innovation Awards 2013</div><div class="clear"></div></div></div><div class="list-section-item" id="news-item-3" onclick="cb_news_item_clicked(&quot;news-item-3&quot;);">    <div class="list-section-item-image"><button class="img-button" onclick="cb_news_item_clicked(&quot;news-item-3&quot;);"><img id="news-item-3-image" src="Images/News/Owl-Logo.png"></button></div>    <div class="list-section-item-text" id="news-item-3-data"><div class="news-item-title">INTUITION-c Smart Heating</div><div class="timestamp">11:40, 18/3/2013</div><div class="news-item-text">Tom &amp; Jenny recently had Intuition-c installed read their story.</div><div class="clear"></div></div></div></div><div class="clear"></div></div>    <div class="scroller-section-title" id="widget-news-title-main" style="border-top-color: rgb(102, 102, 102);">    	<div class="scroller-section-title-text" id="widget-news-title">News</div>    	<div class="scroller-section-title-action" id="widget-news-title-action">    	</div>    </div>    <div class="clear"></div></div></div></div><div id="scroller-extended-section" style="display: none;">	<div id="scroller-extended-section-main">    	To Be Populated By Widget   </div>    <div id="scroller-extended-section-title">    	<div id="scroller-extended-section-title-text">    	</div>    	<div id="scroller-extended-section-title-action">             <i class="fa fa-close fa-2x close-button" onclick="plugin_hide_extended_view();"></i>    	</div>    </div>    <div class="clear"></div></div></div><div class="clear"></div></div>
+	                        <div class="clear"></div>
+	                        <div id="footer"><div id="footer-notes"><div id="footer-notes-left" onclick="StartMaintenance()">2018 © 2 Save Energy Limited</div><div id="footer-notes-right"><a href="http://docs.owlintuition.com" target="_blank" style="color: rgb(52, 201, 47);">Manuals</a> | <a href="http://theowl.com/index.php/about-us/legal-information/privacy-policy-and-disclaimers/" target="_blank">Privacy Policy</a> | <a href="http://theowl.com/index.php/about-us/legal-information/intuition-terms-and-conditions/" target="_blank">Terms &amp; Conditions</a></div></div><div class="clear"></div><div id="footer-images"><div style="margin-left: auto; margin-right:auto; width: 728px; height: 90px; position: relative; background-image: url(&quot;Images/Banners/Android-iPhone-App-Banner.png&quot;);">
+<div style="position: absolute; width:45px; height:90px; left: 25px; cursor: pointer;" onclick="window.open(&quot;https://play.google.com/store/apps/details?id=com.theowl.intuition&quot;);"></div>
+
+<div style="position: absolute; width:115px; height:37px; left: 402px; top: 14px; cursor: pointer;" onclick="window.open(&quot;https://play.google.com/store/apps/details?id=com.theowl.intuition&quot;);"></div>
+
+<div style="position: absolute; width:115px; height:37px; left: 523px; top: 14px; cursor: pointer;" onclick="window.open(&quot;http://itunes.apple.com/app/owl-intuition/id554157784?mt=8&quot;);"></div>
+
+<div style="position: absolute; width:45px; height:90px; left: 658px; cursor: pointer;" onclick="window.open(&quot;http://itunes.apple.com/app/owl-intuition/id554157784?mt=8&quot;);"></div>
+
+</div>
+
+</div></div>
+	                    </div>
+	                </div>
+                    <div id="boxes">
+                        <div id="dialog" class="window">
+                            <div id="dialog-header-outer">
+                                <div id="dialog-header-left">
+                                &nbsp;
+                                </div>
+                                <div id="dialog-header-center">
+                                </div>
+                                <div id="dialog-header-right">
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div id="dialog-content">
+                            </div>
+                         </div>
+                        <div id="mask">
+                        </div>
+                    </div>
+                    <script src="Javascript/jquery.ui.core.js"></script>
+                    <script src="Javascript/jquery.ui.widget.js"></script>
+                    <script src="Javascript/jquery.ui.position.js"></script>
+                    <script src="Javascript/jquery.ui.tooltip.js"></script>
+                    <script src="Javascript/jquery.ui.button.js"></script>
+                    <script src="Javascript/jquery.ui.menu.js"></script>
+                    <script src="Javascript/jquery.ui.selectmenu.js"></script>
+                    <script src="Javascript/jquery.ui.datepicker.js"></script>
+                    <script src="Javascript/jquery.ui.progressbar.js"></script>
+                    <script src="Javascript/jquery.alerts.js"></script>
+                    <script src="Javascript/jquery.touchSwipe.js"></script>
+                    <script type="text/javascript" src="Javascript/jquery.carouFredSel-5.3.0-packed.js"></script>
+                    <script type="text/javascript" src="Javascript/highcharts/highcharts.src.js"></script>
+
+	                <script type="text/javascript" src="Javascript/highcharts/themes/owl.js"></script>
+	                <script type="text/javascript" src="Javascript/highcharts/modules/exporting.js"></script>
+
+	                <script type="text/javascript" src="Javascript/login.js"></script>
+                    <script type="text/javascript" src="Javascript/jsjac/JSJaC.js"> </script><script type="text/javascript" src="https://www.owlintuition.com/Javascript/jsjac/xmlextras.js"></script><script type="text/javascript" src="https://www.owlintuition.com/Javascript/jsjac/jsextras.js"></script><script type="text/javascript" src="https://www.owlintuition.com/Javascript/jsjac/crypt.js"></script><script type="text/javascript" src="https://www.owlintuition.com/Javascript/jsjac/JSJaCConfig.js"></script><script type="text/javascript" src="https://www.owlintuition.com/Javascript/jsjac/JSJaCConstants.js"></script><script type="text/javascript" src="https://www.owlintuition.com/Javascript/jsjac/JSJaCCookie.js"></script><script type="text/javascript" src="https://www.owlintuition.com/Javascript/jsjac/JSJaCJSON.js"></script><script type="text/javascript" src="https://www.owlintuition.com/Javascript/jsjac/JSJaCJID.js"></script><script type="text/javascript" src="https://www.owlintuition.com/Javascript/jsjac/JSJaCBuilder.js"></script><script type="text/javascript" src="https://www.owlintuition.com/Javascript/jsjac/JSJaCPacket.js"></script><script type="text/javascript" src="https://www.owlintuition.com/Javascript/jsjac/JSJaCError.js"></script><script type="text/javascript" src="https://www.owlintuition.com/Javascript/jsjac/JSJaCKeys.js"></script><script type="text/javascript" src="https://www.owlintuition.com/Javascript/jsjac/JSJaCConnection.js"></script><script type="text/javascript" src="https://www.owlintuition.com/Javascript/jsjac/JSJaCHttpPollingConnection.js"></script><script type="text/javascript" src="https://www.owlintuition.com/Javascript/jsjac/JSJaCHttpBindingConnection.js"></script><script type="text/javascript" src="https://www.owlintuition.com/Javascript/jsjac/JSJaCConsoleLogger.js"></script> 
+    	            <script type="text/javascript" src="Javascript/xmpp_comms.js"></script>
+    	            <script type="text/javascript" src="Javascript/interface.js"></script>
+    	            <script type="text/javascript" src="Javascript/menu.js"></script>
+                    <script type="text/javascript" src="Javascript/messages.js"></script>
+                    <script type="text/javascript" src="Javascript/network_owl_manager.js"></script>
+                    <script type="text/javascript" src="Javascript/weather.js"></script>
+                    <script type="text/javascript" src="Javascript/plugin.js"></script>
+                    <script type="text/javascript" src="Javascript/tariff.js"></script>
+                    <script type="text/javascript" src="Javascript/language.js"></script>
+                    <script type="text/javascript" src="Javascript/Wizard.js"></script>
+                    <script type="text/javascript" src="Javascript/Wizard_Pairing.js"></script>
+					<script type="text/javascript" src="Javascript/wizard_maintenance.js"></script>
+					<script type="text/javascript" src="Javascript/plugins/tariffs_2_0.js"></script>
+        
+    	                        <script type="text/javascript" src="Javascript/plugins/plugin_relay.js"></script>
+    	                        <script type="text/javascript">
+    	                            plugin_add("plugin_relay");
+    	                        </script>
+    	                        
+    	                        <script type="text/javascript" src="Javascript/plugins/plugin_today.js"></script>
+    	                        <script type="text/javascript">
+    	                            plugin_add("plugin_today");
+    	                        </script>
+    	                        
+    	                        <script type="text/javascript" src="Javascript/plugins/plugin_system.js"></script>
+    	                        <script type="text/javascript">
+    	                            plugin_add("plugin_system");
+    	                        </script>
+    	                        
+    	                        <script type="text/javascript" src="Javascript/plugins/plugin_news.js"></script>
+    	                        <script type="text/javascript">
+    	                            plugin_add("plugin_news");
+    	                        </script>
+    	                        
+    	                        <script type="text/javascript" src="Javascript/plugins/plugin_heatpump.js"></script>
+    	                        <script type="text/javascript">
+    	                            plugin_add("plugin_heatpump");
+    	                        </script>
+    	                        
+    	                        <script type="text/javascript" src="Javascript/plugins/tariffs_2_0.js"></script>
+    	                        <script type="text/javascript">
+    	                            plugin_add("tariffs_2_0");
+    	                        </script>
+    	                        
+    	                        <script type="text/javascript" src="Javascript/plugins/plugin_electricity.js"></script>
+    	                        <script type="text/javascript">
+    	                            plugin_add("plugin_electricity");
+    	                        </script>
+    	                        
+    	                        <script type="text/javascript" src="Javascript/plugins/plugin_solar.js"></script>
+    	                        <script type="text/javascript">
+    	                            plugin_add("plugin_solar");
+    	                        </script>
+    	                        
+    	                        <script type="text/javascript" src="Javascript/plugins/plugin_hotwater.js"></script>
+    	                        <script type="text/javascript">
+    	                            plugin_add("plugin_hotwater");
+    	                        </script>
+    	                        
+    	                        <script type="text/javascript" src="Javascript/plugins/plugin_devices.js"></script>
+    	                        <script type="text/javascript">
+    	                            plugin_add("plugin_devices");
+    	                        </script>
+    	                        
+    	                        <script type="text/javascript" src="Javascript/plugins/plugin_system_settings.js"></script>
+    	                        <script type="text/javascript">
+    	                            plugin_add("plugin_system_settings");
+    	                        </script>
+    	                        
+    	                        <script type="text/javascript" src="Javascript/plugins/plugin_3phase.js"></script>
+    	                        <script type="text/javascript">
+    	                            plugin_add("plugin_3phase");
+    	                        </script>
+    	                        
+    	                        <script type="text/javascript" src="Javascript/plugins/plugin_heating.js"></script>
+    	                        <script type="text/javascript">
+    	                            plugin_add("plugin_heating");
+    	                        </script>
+    	                        
+    	                <script type="text/javascript">
+    			
+		// remote scripting library
+		// (c) copyright 2005 modernmethod, inc
+		var sajax_debug_mode = false;
+		var sajax_request_type = "POST";
+		var sajax_target_id = "";
+		var sajax_failure_redirect = "";
+		
+		function sajax_debug(text) {
+//			if (sajax_debug_mode)
+//				alert(text);
+		}
+		
+ 		function sajax_init_object() {
+ 			sajax_debug("sajax_init_object() called..")
+ 			
+ 			var A;
+ 			
+ 			var msxmlhttp = new Array(
+				'Msxml2.XMLHTTP.5.0',
+				'Msxml2.XMLHTTP.4.0',
+				'Msxml2.XMLHTTP.3.0',
+				'Msxml2.XMLHTTP',
+				'Microsoft.XMLHTTP');
+			for (var i = 0; i < msxmlhttp.length; i++) {
+				try {
+					A = new ActiveXObject(msxmlhttp[i]);
+				} catch (e) {
+					A = null;
+				}
+			}
+ 			
+			if(!A && typeof XMLHttpRequest != "undefined")
+				A = new XMLHttpRequest();
+			if (!A)
+				sajax_debug("Could not create connection object.");
+			return A;
+		}
+		
+		var sajax_requests = new Array();
+		
+		function sajax_cancel() {
+			for (var i = 0; i < sajax_requests.length; i++) 
+				sajax_requests[i].abort();
+		}
+		
+		function sajax_do_call(func_name, args) {
+			var i, x, n;
+			var uri;
+			var post_data;
+			var target_id;
+			
+			sajax_debug("in sajax_do_call().." + sajax_request_type + "/" + sajax_target_id);
+			target_id = sajax_target_id;
+			if (typeof(sajax_request_type) == "undefined" || sajax_request_type == "") 
+				sajax_request_type = "GET";
+			
+			uri = "/";
+			if (sajax_request_type == "GET") {
+			
+				if (uri.indexOf("?") == -1) 
+					uri += "?rs=" + escape(func_name);
+				else
+					uri += "&rs=" + escape(func_name);
+				uri += "&rst=" + escape(sajax_target_id);
+				uri += "&rsrnd=" + new Date().getTime();
+				uri += "&user=" + plugin_get_username();
+				
+				for (i = 0; i < args.length-1; i++) 
+					uri += "&rsargs[]=" + escape(args[i]);
+
+				post_data = null;
+			} 
+			else if (sajax_request_type == "POST") {
+				post_data = "rs=" + escape(func_name);
+				post_data += "&rst=" + escape(sajax_target_id);
+				post_data += "&rsrnd=" + new Date().getTime();
+                post_data += "&u=" + plugin_get_username();
+                post_data += "&p=" + sessionStorage.getItem("pass");
+				
+				for (i = 0; i < args.length-1; i++) 
+					post_data = post_data + "&rsargs[]=" + escape(args[i]);
+			}
+			else {
+//				alert("Illegal request type: " + sajax_request_type);
+			}
+			
+			x = sajax_init_object();
+			if (x == null) {
+				if (sajax_failure_redirect != "") {
+					location.href = sajax_failure_redirect;
+					return false;
+				} else {
+					sajax_debug("NULL sajax object for user agent:\n" + navigator.userAgent);
+					return false;
+				}
+			} else {
+				x.open(sajax_request_type, uri, true);
+				// window.open(uri);
+				
+				sajax_requests[sajax_requests.length] = x;
+				
+				if (sajax_request_type == "POST") {
+					x.setRequestHeader("Method", "POST " + uri + " HTTP/1.1");
+					x.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8'");
+				}
+			
+				x.onreadystatechange = function() {
+					if (x.readyState != 4) 
+						return;
+
+					sajax_debug("received " + x.responseText);
+				
+					var status;
+					var data;
+					var txt = x.responseText.replace(/^\s*|\s*$/g,"");
+					status = txt.charAt(0);
+					data = txt.substring(2);
+
+					if (status == "") {
+						// let's just assume this is a pre-response bailout and let it slide for now
+					} else if (status == "-") {
+//						alert("Error: " + data);
+					} else {
+						if (target_id != "") 
+							document.getElementById(target_id).innerHTML = eval(data);
+						else {
+							try {
+								var callback;
+								var extra_data = false;
+								if (typeof args[args.length-1] == "object") {
+									callback = args[args.length-1].callback;
+									extra_data = args[args.length-1].extra_data;
+								} else {
+									callback = args[args.length-1];
+								}
+								callback(eval(data), extra_data);
+							} catch (e) {
+								sajax_debug("Caught error " + e + ": Could not eval " + data );
+							}
+						}
+					}
+				}
+			}
+			
+			sajax_debug(func_name + " uri = " + uri + "/post = " + post_data);
+			x.send(post_data);
+			sajax_debug(func_name + " waiting..");
+			delete x;
+			return true;
+		}
+		
+				
+		// wrapper for current_weather_get		
+		function x_current_weather_get() {
+			sajax_do_call("current_weather_get",
+				x_current_weather_get.arguments);
+		}
+		
+				
+		// wrapper for live_weather_get		
+		function x_live_weather_get() {
+			sajax_do_call("live_weather_get",
+				x_live_weather_get.arguments);
+		}
+		
+				
+		// wrapper for sunrise_sunset_get		
+		function x_sunrise_sunset_get() {
+			sajax_do_call("sunrise_sunset_get",
+				x_sunrise_sunset_get.arguments);
+		}
+		
+				
+		// wrapper for electricity_get_historical		
+		function x_electricity_get_historical() {
+			sajax_do_call("electricity_get_historical",
+				x_electricity_get_historical.arguments);
+		}
+		
+				
+		// wrapper for day_elec_values_get		
+		function x_day_elec_values_get() {
+			sajax_do_call("day_elec_values_get",
+				x_day_elec_values_get.arguments);
+		}
+		
+				
+		// wrapper for month_daily_elec_values_get		
+		function x_month_daily_elec_values_get() {
+			sajax_do_call("month_daily_elec_values_get",
+				x_month_daily_elec_values_get.arguments);
+		}
+		
+				
+		// wrapper for elec_values_get_no_group		
+		function x_elec_values_get_no_group() {
+			sajax_do_call("elec_values_get_no_group",
+				x_elec_values_get_no_group.arguments);
+		}
+		
+				
+		// wrapper for elec_values_get_with_group		
+		function x_elec_values_get_with_group() {
+			sajax_do_call("elec_values_get_with_group",
+				x_elec_values_get_with_group.arguments);
+		}
+		
+				
+		// wrapper for elec_yesterday_overview		
+		function x_elec_yesterday_overview() {
+			sajax_do_call("elec_yesterday_overview",
+				x_elec_yesterday_overview.arguments);
+		}
+		
+				
+		// wrapper for day_solar_values_get		
+		function x_day_solar_values_get() {
+			sajax_do_call("day_solar_values_get",
+				x_day_solar_values_get.arguments);
+		}
+		
+				
+		// wrapper for month_daily_solar_values_get		
+		function x_month_daily_solar_values_get() {
+			sajax_do_call("month_daily_solar_values_get",
+				x_month_daily_solar_values_get.arguments);
+		}
+		
+				
+		// wrapper for solar_get_historical		
+		function x_solar_get_historical() {
+			sajax_do_call("solar_get_historical",
+				x_solar_get_historical.arguments);
+		}
+		
+				
+		// wrapper for solar_yesterday_overview		
+		function x_solar_yesterday_overview() {
+			sajax_do_call("solar_yesterday_overview",
+				x_solar_yesterday_overview.arguments);
+		}
+		
+				
+		// wrapper for solar_values_get_no_group		
+		function x_solar_values_get_no_group() {
+			sajax_do_call("solar_values_get_no_group",
+				x_solar_values_get_no_group.arguments);
+		}
+		
+				
+		// wrapper for solar_values_get_with_group		
+		function x_solar_values_get_with_group() {
+			sajax_do_call("solar_values_get_with_group",
+				x_solar_values_get_with_group.arguments);
+		}
+		
+				
+		// wrapper for solar_get_lifetime		
+		function x_solar_get_lifetime() {
+			sajax_do_call("solar_get_lifetime",
+				x_solar_get_lifetime.arguments);
+		}
+		
+				
+		// wrapper for solar_set_tariff		
+		function x_solar_set_tariff() {
+			sajax_do_call("solar_set_tariff",
+				x_solar_set_tariff.arguments);
+		}
+		
+				
+		// wrapper for messages_get_list		
+		function x_messages_get_list() {
+			sajax_do_call("messages_get_list",
+				x_messages_get_list.arguments);
+		}
+		
+				
+		// wrapper for messages_store_new		
+		function x_messages_store_new() {
+			sajax_do_call("messages_store_new",
+				x_messages_store_new.arguments);
+		}
+		
+				
+		// wrapper for messages_delete		
+		function x_messages_delete() {
+			sajax_do_call("messages_delete",
+				x_messages_delete.arguments);
+		}
+		
+				
+		// wrapper for messages_mark_read		
+		function x_messages_mark_read() {
+			sajax_do_call("messages_mark_read",
+				x_messages_mark_read.arguments);
+		}
+		
+				
+		// wrapper for messages_unread_count		
+		function x_messages_unread_count() {
+			sajax_do_call("messages_unread_count",
+				x_messages_unread_count.arguments);
+		}
+		
+				
+		// wrapper for news_get_list		
+		function x_news_get_list() {
+			sajax_do_call("news_get_list",
+				x_news_get_list.arguments);
+		}
+		
+				
+		// wrapper for day_3phase_values_get		
+		function x_day_3phase_values_get() {
+			sajax_do_call("day_3phase_values_get",
+				x_day_3phase_values_get.arguments);
+		}
+		
+				
+		// wrapper for electricity_3phase_get_historical		
+		function x_electricity_3phase_get_historical() {
+			sajax_do_call("electricity_3phase_get_historical",
+				x_electricity_3phase_get_historical.arguments);
+		}
+		
+				
+		// wrapper for electricity_3phase_values_get_no_group		
+		function x_electricity_3phase_values_get_no_group() {
+			sajax_do_call("electricity_3phase_values_get_no_group",
+				x_electricity_3phase_values_get_no_group.arguments);
+		}
+		
+				
+		// wrapper for electricity_3phase_values_get_with_group		
+		function x_electricity_3phase_values_get_with_group() {
+			sajax_do_call("electricity_3phase_values_get_with_group",
+				x_electricity_3phase_values_get_with_group.arguments);
+		}
+		
+				
+		// wrapper for system_validate_control		
+		function x_system_validate_control() {
+			sajax_do_call("system_validate_control",
+				x_system_validate_control.arguments);
+		}
+		
+				
+		// wrapper for system_user_exists		
+		function x_system_user_exists() {
+			sajax_do_call("system_user_exists",
+				x_system_user_exists.arguments);
+		}
+		
+				
+		// wrapper for system_register_device_info		
+		function x_system_register_device_info() {
+			sajax_do_call("system_register_device_info",
+				x_system_register_device_info.arguments);
+		}
+		
+				
+		// wrapper for system_register_solar_info		
+		function x_system_register_solar_info() {
+			sajax_do_call("system_register_solar_info",
+				x_system_register_solar_info.arguments);
+		}
+		
+				
+		// wrapper for system_user_online		
+		function x_system_user_online() {
+			sajax_do_call("system_user_online",
+				x_system_user_online.arguments);
+		}
+		
+				
+		// wrapper for device_version_check		
+		function x_device_version_check() {
+			sajax_do_call("device_version_check",
+				x_device_version_check.arguments);
+		}
+		
+				
+		// wrapper for system_get_expiry		
+		function x_system_get_expiry() {
+			sajax_do_call("system_get_expiry",
+				x_system_get_expiry.arguments);
+		}
+		
+				
+		// wrapper for system_get_documents		
+		function x_system_get_documents() {
+			sajax_do_call("system_get_documents",
+				x_system_get_documents.arguments);
+		}
+		
+				
+		// wrapper for system_get_adverts		
+		function x_system_get_adverts() {
+			sajax_do_call("system_get_adverts",
+				x_system_get_adverts.arguments);
+		}
+		
+				
+		// wrapper for system_get_boiler_day_info		
+		function x_system_get_boiler_day_info() {
+			sajax_do_call("system_get_boiler_day_info",
+				x_system_get_boiler_day_info.arguments);
+		}
+		
+				
+		// wrapper for system_check_nowl		
+		function x_system_check_nowl() {
+			sajax_do_call("system_check_nowl",
+				x_system_check_nowl.arguments);
+		}
+		
+				
+		// wrapper for system_get_udp_key		
+		function x_system_get_udp_key() {
+			sajax_do_call("system_get_udp_key",
+				x_system_get_udp_key.arguments);
+		}
+		
+				
+		// wrapper for system_get_cmd_key		
+		function x_system_get_cmd_key() {
+			sajax_do_call("system_get_cmd_key",
+				x_system_get_cmd_key.arguments);
+		}
+		
+				
+		// wrapper for system_get_econudge		
+		function x_system_get_econudge() {
+			sajax_do_call("system_get_econudge",
+				x_system_get_econudge.arguments);
+		}
+		
+				
+		// wrapper for system_set_econudge		
+		function x_system_set_econudge() {
+			sajax_do_call("system_set_econudge",
+				x_system_set_econudge.arguments);
+		}
+		
+				
+		// wrapper for system_get_currency_list		
+		function x_system_get_currency_list() {
+			sajax_do_call("system_get_currency_list",
+				x_system_get_currency_list.arguments);
+		}
+		
+				
+		// wrapper for system_get_info		
+		function x_system_get_info() {
+			sajax_do_call("system_get_info",
+				x_system_get_info.arguments);
+		}
+		
+				
+		// wrapper for system_set_country		
+		function x_system_set_country() {
+			sajax_do_call("system_set_country",
+				x_system_set_country.arguments);
+		}
+		
+				
+		// wrapper for system_set_email		
+		function x_system_set_email() {
+			sajax_do_call("system_set_email",
+				x_system_set_email.arguments);
+		}
+		
+				
+		// wrapper for system_clear_solar_info		
+		function x_system_clear_solar_info() {
+			sajax_do_call("system_clear_solar_info",
+				x_system_clear_solar_info.arguments);
+		}
+		
+				
+		// wrapper for system_set_postcode		
+		function x_system_set_postcode() {
+			sajax_do_call("system_set_postcode",
+				x_system_set_postcode.arguments);
+		}
+		
+				
+		// wrapper for heating_values_get_no_group		
+		function x_heating_values_get_no_group() {
+			sajax_do_call("heating_values_get_no_group",
+				x_heating_values_get_no_group.arguments);
+		}
+		
+				
+		// wrapper for heating_battery_daily_readings		
+		function x_heating_battery_daily_readings() {
+			sajax_do_call("heating_battery_daily_readings",
+				x_heating_battery_daily_readings.arguments);
+		}
+		
+				
+		// wrapper for heating_zone_values_get_no_group		
+		function x_heating_zone_values_get_no_group() {
+			sajax_do_call("heating_zone_values_get_no_group",
+				x_heating_zone_values_get_no_group.arguments);
+		}
+		
+				
+		// wrapper for heating_all_zones_values_get_no_group		
+		function x_heating_all_zones_values_get_no_group() {
+			sajax_do_call("heating_all_zones_values_get_no_group",
+				x_heating_all_zones_values_get_no_group.arguments);
+		}
+		
+				
+		// wrapper for heating_zone_humidity_values_get_no_group		
+		function x_heating_zone_humidity_values_get_no_group() {
+			sajax_do_call("heating_zone_humidity_values_get_no_group",
+				x_heating_zone_humidity_values_get_no_group.arguments);
+		}
+		
+				
+		// wrapper for heating_all_zones_humidity_values_get_no_group		
+		function x_heating_all_zones_humidity_values_get_no_group() {
+			sajax_do_call("heating_all_zones_humidity_values_get_no_group",
+				x_heating_all_zones_humidity_values_get_no_group.arguments);
+		}
+		
+				
+		// wrapper for hw_values_get_no_group		
+		function x_hw_values_get_no_group() {
+			sajax_do_call("hw_values_get_no_group",
+				x_hw_values_get_no_group.arguments);
+		}
+		
+				
+		// wrapper for hw_battery_daily_readings		
+		function x_hw_battery_daily_readings() {
+			sajax_do_call("hw_battery_daily_readings",
+				x_hw_battery_daily_readings.arguments);
+		}
+		
+				
+		// wrapper for hw_humidity_values_get_no_group		
+		function x_hw_humidity_values_get_no_group() {
+			sajax_do_call("hw_humidity_values_get_no_group",
+				x_hw_humidity_values_get_no_group.arguments);
+		}
+		
+				
+		// wrapper for hw_zone_values_get_no_group		
+		function x_hw_zone_values_get_no_group() {
+			sajax_do_call("hw_zone_values_get_no_group",
+				x_hw_zone_values_get_no_group.arguments);
+		}
+		
+				
+		// wrapper for hw_all_zones_values_get_no_group		
+		function x_hw_all_zones_values_get_no_group() {
+			sajax_do_call("hw_all_zones_values_get_no_group",
+				x_hw_all_zones_values_get_no_group.arguments);
+		}
+		
+				
+		// wrapper for hw_all_zones_humidity_values_get_no_group		
+		function x_hw_all_zones_humidity_values_get_no_group() {
+			sajax_do_call("hw_all_zones_humidity_values_get_no_group",
+				x_hw_all_zones_humidity_values_get_no_group.arguments);
+		}
+		
+				
+		// wrapper for hw_zone_humidity_values_get_no_group		
+		function x_hw_zone_humidity_values_get_no_group() {
+			sajax_do_call("hw_zone_humidity_values_get_no_group",
+				x_hw_zone_humidity_values_get_no_group.arguments);
+		}
+		
+				
+		// wrapper for language_get_supported		
+		function x_language_get_supported() {
+			sajax_do_call("language_get_supported",
+				x_language_get_supported.arguments);
+		}
+		
+				
+		// wrapper for language_loadStrings		
+		function x_language_loadStrings() {
+			sajax_do_call("language_loadStrings",
+				x_language_loadStrings.arguments);
+		}
+		
+				
+		// wrapper for join_generaytor		
+		function x_join_generaytor() {
+			sajax_do_call("join_generaytor",
+				x_join_generaytor.arguments);
+		}
+		
+		
+    	                </script>
+	            
+	        
+      
+        
+<div id="scroll-selectors">    <div id="scroll-selectors-inner">        <div id="scroll-selector-left" class="" style="display: block;">            <i class="fa fa-chevron-left fa-4x"></i>        </div>    	  <div id="scroll-selector-right" class="" style="display: block;">            <i class="fa fa-chevron-right fa-4x"></i>        </div>    <div class="clear"></div>    </div></div></body></html>
